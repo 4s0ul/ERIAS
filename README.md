@@ -184,3 +184,96 @@ column indices:
   24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42]]
 max not null in row: 43
 ```
+
+---
+
+## hw_4.py
+
+### Запуск:
+
+```bash
+python hw_4.py
+```
+
+### Вывод:
+
+```
+=== Input matrix ===
+[[0 0 4 1 0]
+ [1 3 4 4 3]
+ [3 0 0 2 2]
+ [0 3 3 3 3]
+ [0 1 3 2 0]]
+Average product ratings: [2.5   3.    2.333 3.    2.   ]
+Top rated product: Product2 (rating 3.00)
+User similarity matrix:
+[[0.    1.    1.    0.707 0.789]
+ [1.    0.    0.944 0.98  1.   ]
+ [1.    0.944 0.    0.904 0.99 ]
+ [0.707 0.98  0.904 0.    0.99 ]
+ [0.789 1.    0.99  0.99  0.   ]]
+
+=== Forecast for User1 by product Product5 ===
+Neighbours: ['User2', 'User3']
+Predicted rating: 1.083
+Average rating User1: 2.000
+Not recommended Product5: 1.08 < 4.0 or < average 2.00
+
+=== Forecast for User2 by product Product4 ===
+Neighbours: ['User5', 'User4']
+Predicted rating: 2.799
+Average rating User2: 2.333
+Not recommended Product4: 2.80 < 4.0 or < average 2.33
+
+Matrix with new user User6:
+[[0 0 4 1 0 0]
+ [1 3 4 4 3 0]
+ [3 0 0 2 2 0]
+ [0 3 3 3 3 0]
+ [0 1 3 2 0 0]]
+
+=== Forecast for User6 ===
+User6 — new user, popularity-based approach is used
+Top rated product: Product2 (average rating 3.00)
+```
+
+---
+
+## hw_5.py
+
+### Запуск:
+
+```bash
+python hw_5.py
+```
+
+### Вывод:
+
+```
+=== Input matrix ===
+[[1 4 2 4 0]
+ [2 4 3 1 0]
+ [4 3 4 3 3]
+ [0 3 2 0 0]
+ [0 3 4 1 3]]
+Average product ratings: [2.75 2.5  3.4  2.5  2.75]
+Top rated product: Product3 (rating 3.40)
+Item similarity matrix:
+[[0.    0.84  0.837 0.992 0.784]
+ [0.84  0.    0.904 0.998 0.962]
+ [0.837 0.904 0.    0.943 0.954]
+ [0.992 0.998 0.943 0.    0.943]
+ [0.784 0.962 0.954 0.943 0.   ]]
+
+=== Forecast for User2 by product Product4 ===
+Similar items: ['Product2', 'Product1']
+Predicted rating: 4.000
+Average rating User2: 3.400
+Recommend Product4: 4.00 ≥ 4.0 and ≥ average 3.40
+
+=== Forecast for User5 by product Product3 ===
+Similar items: ['Product5']
+Predicted rating: 3.000
+Average rating User5: 3.000
+Not recommended Product3: 3.00 < 4.0 or < average 3.00
+```
