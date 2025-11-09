@@ -277,3 +277,24 @@ Predicted rating: 3.000
 Average rating User5: 3.000
 Not recommended Product3: 3.00 < 4.0 or < average 3.00
 ```
+
+---
+
+## hw_6.py
+
+### Запуск:
+
+```bash
+python hw_6.py
+```
+
+### Вывод:
+
+```
+e1:
+ md 0.75 | mdn: 0.3 | ku:  0.45
+e2:
+ md: 0.85 | md: 0.2 | ku: 0.6499999999999999
+combination:
+ md: 0.9625 | mnd: 0.43999999999999995 | md: 0.5225000000000001
+```
